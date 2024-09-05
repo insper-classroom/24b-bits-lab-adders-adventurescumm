@@ -52,6 +52,6 @@ def adder(x, y, soma, carry):
     faList = [None for i in range(n)]
 
     for n in range(len(soma)):
-        faList[n] = fullAdder(x[n], y[n], s[n], soma[n], carry[n])
+        faList[n] = fullAdder(x[n], y[n], s[n - 1], soma[n], s[n])
 
     return instances()
